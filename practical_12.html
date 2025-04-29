@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Images with Separator Line</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0px; /* No extra gap, line will separate */
+        }
+        .image-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+        .separator {
+            width: 2px;
+            height: 400px; /* Taller than images */
+            background-color: black;
+        }
+        img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            border: 2px solid black;
+        }
+        .caption {
+            margin-top: 15px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="image-box">
+        <img src="ai1.png" alt="AI Image 1">
+        <div class="caption">By - Ritvik Garasangi</div>
+    </div>
+    
+    <div class="separator"></div> <!-- vertical line between images -->
+
+    <div class="image-box">
+        <img src="ai2.png" alt="AI Image 2">
+    </div>
+</div>
+
+</body>
+</html>
